@@ -1,14 +1,23 @@
-from flask import render_template
-from app import app
+from flask import Blueprint, render_template
 
-@app.route('/')
+routes = Blueprint('routes', __name__)
+
+@routes.route('/')
 def index():
     return render_template('index.html')
 
-@app.route('/about')
+@routes.route('/about')
 def about():
     return render_template('about.html')
 
-@app.route('/exam')
-def exam():
-    return render_template('exam.html')
+@routes.route('/services')
+def services():
+    return render_template('services.html')
+
+@routes.route('/products')
+def products():
+    return render_template('products.html')
+
+@routes.route('/contact')
+def contact():
+    return render_template('contact.html')
