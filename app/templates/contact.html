@@ -1,15 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Contact</title>
-</head>
-<body>
 {% extends "base.html" %}
 
+{% block title %}Contact Us - George's Pet Shop{% endblock %}
+
 {% block content %}
-<h1>Welcome to George's Pet Shop</h1>
-<p>Find the best products for your pets.</p>
+<div class="container mt-5">
+    <h1 class="text-center">Contact Us</h1>
+    <p class="text-center lead">Have any questions or need more information? Annoy our intern today!</p>
+
+    <div class="row">
+        <!-- Contact Form -->
+        <div class="col-md-6">
+            <h3>Send us a message</h3>
+            <p>Or don't, see if we care.</p>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="col-md-6">
+            <h3>Our Contact Information</h3>
+            <ul class="list-unstyled">
+                <li><strong>Address:</strong> 123 Pet Street, Pet City, PC 12345</li>
+                <li><strong>Phone:</strong> (123) 456-7890</li>
+                <li><strong>Email:</strong> info@petstore.com</li>
+                <li><strong>Working Hours:</strong> Mon - Sat, 9 AM - 6 PM</li>
+            </ul>
+
+            <!-- Optional: Map or Image of the location -->
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d351.3944344291494!2d-83.23106101639927!3d33.08157195767266!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f6c7e739f5f127%3A0xa7ccbacd83484cb8!2sAtkinson%20Hall%20-%20Georgia%20College!5e0!3m2!1sen!2sus!4v1727664337875!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</div>
 {% endblock %}
-</body>
-</html>

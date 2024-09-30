@@ -1,6 +1,46 @@
 {% extends "base.html" %}
 
+{% block title %}Services - George's Pet Shop{% endblock %}
+
 {% block content %}
-<h1>Welcome to George's Pet Shop</h1>
-<p>Find the best products for your pets.</p>
+<div class="container mt-5">
+    <h1 class="text-center">Our Services</h1>
+    <p class="lead text-center">We offer a wide range of services to keep your pets happy and healthy.</p>
+
+    <div class="row">
+        <!-- Service 1 -->
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="dogwalk2.jpg" alt="Walking Service">
+                <div class="card-body">
+                    <h5 class="card-title">Pet walking</h5>
+                    <p class="card-text">Keep your pets in good shape with regular walking and exercise.</p>
+                    <a href="/contact" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+        </div>
+        <!-- Service 2 -->
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="path/to/training.jpg" alt="Training Service">
+                <div class="card-body">
+                    <h5 class="card-title">Pet Training</h5>
+                    <p class="card-text">Enroll your pets in our training sessions for improved behavior and skills.</p>
+                    <a href="/contact" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+        </div>
+        <!-- Service 3 -->
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="path/to/consultation.jpg" alt="Veterinary Consultation">
+                <div class="card-body">
+                    <h5 class="card-title">Veterinary Consultations</h5>
+                    <p class="card-text">Schedule a vet consultation for routine check-ups or special treatments.</p>
+                    <a href="/contact" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
