@@ -1,6 +1,49 @@
 {% extends "base.html" %}
 
+{% block title %}Home - George's Pet Shop{% endblock %}
+
 {% block content %}
-<h1>Welcome to George's Pet Shop</h1>
-<p>Find the best products for your pets.</p>
+<!-- Jumbotron Header -->
+<div class="jumbotron text-center bg-info text-white">
+    <h1 class="display-4">Welcome to George's Pet Shop!</h1>
+    <p class="lead">Your one-stop shop for all things pets and supplies.</p>
+    <a class="btn btn-primary btn-lg" href="/products" role="button">Shop Now</a>
+</div>
+
+<!-- Featured Products Section -->
+<div class="container">
+    <h2 class="text-center">Featured Products</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="path/to/image1.jpg" alt="Pet Food">
+                <div class="card-body">
+                    <h5 class="card-title">Premium Pet Food</h5>
+                    <p class="card-text">High-quality pet food to keep your pets healthy and happy.</p>
+                    <a href="/products" class="btn btn-primary">View Product</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="path/to/image2.jpg" alt="Pet Toys">
+                <div class="card-body">
+                    <h5 class="card-title">Pet Toys</h5>
+                    <p class="card-text">Fun toys to keep your pets entertained for hours.</p>
+                    <a href="/products" class="btn btn-primary">View Product</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="path/to/image3.jpg" alt="Pet Accessories">
+                <div class="card-body">
+                    <h5 class="card-title">Pet Accessories</h5>
+                    <p class="card-text">Stylish accessories to keep your pets looking their best.</p>
+                    <a href="/products" class="btn btn-primary">View Product</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}

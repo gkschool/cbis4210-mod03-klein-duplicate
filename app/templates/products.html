@@ -1,15 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Products</title>
-</head>
-<body>
 {% extends "base.html" %}
 
+{% block title %}Products - George's Pet Shop{% endblock %}
+
 {% block content %}
-<h1>Welcome to George's Pet Shop</h1>
-<p>Find the best products for your pets.</p>
+<div class="container mt-5">
+    <h1 class="text-center">Our Products</h1>
+    <p class="lead text-center">Browse our range of high-quality products for your pets.</p>
+
+    <div class="row">
+        <!-- Product 1 -->
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="{{ url_for('static', filename='assets/dogfood.png') }}" alt="Product 1">
+                <div class="card-body">
+                    <h5 class="card-title">Premium Dog Food</h5>
+                    <p class="card-text">Nutritious and delicious dog food made from organic ingredients.</p>
+                    <p class="price"><strong>$19.99</strong></p>
+                    <a href="/contact" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="{{ url_for('static', filename='assets/product2.jpg') }}" alt="Product 2">
+                <div class="card-body">
+                    <h5 class="card-title">Cat Scratching Post</h5>
+                    <p class="card-text">Durable and fun scratching post for your cat’s entertainment.</p>
+                    <p class="price"><strong>$29.99</strong></p>
+                    <a href="/contact" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="{{ url_for('static', filename='assets/product3.jpg') }}" alt="Product 3">
+                <div class="card-body">
+                    <h5 class="card-title">Bird Cage</h5>
+                    <p class="card-text">Spacious and comfortable cage for your pet bird.</p>
+                    <p class="price"><strong>$45.99</strong></p>
+                    <a href="/contact" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
-</body>
-</html>
